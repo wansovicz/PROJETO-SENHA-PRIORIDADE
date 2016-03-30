@@ -102,8 +102,8 @@ void ChamarProximoFila(TFila *p){
 			printf("\t""|                                       |""\n");
 			printf("\t""+---------------------------------------+""\n");
 		}			
-		Beep(500,800);
-		Beep(400,800);
+		Beep(1100,800);
+		Beep(1000,800);
 		printf("\n""Aguarde...");
 		Sleep(2000);
 			
@@ -142,7 +142,7 @@ void Apresentar(TFila *p){
 		printf("\n\n""Total de clientes na fila: %d", p->tamanho);
 		
 	}else{
-		Beep(1000,500);
+		Beep(600,500);
 		printf("Nao ha senhas ativas em espera.");
 	}
 	
