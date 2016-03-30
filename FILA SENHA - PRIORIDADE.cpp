@@ -129,16 +129,18 @@ void Apresentar(TFila *p){
 	
 	if(p->tamanho > 0){
 		printf("Fila de Senhas:\n");
-		if(p->tamanho > 0){
-			for(int x = 0; x < p->tamanho; x++){
-				printf("\n""%d""\t| ", p->fila[x].senha);
-				
-				if(p->fila[x].prioridade)
-					printf("Preferencial");
-				else
-					printf("Comum");				
-			}
+		
+		for(int x = 0; x < p->tamanho; x++){
+			printf("\n""%d""\t| ", p->fila[x].senha);
+			
+			if(p->fila[x].prioridade)
+				printf("Preferencial");
+			else
+				printf("Comum");				
 		}
+		
+		printf("\n\n""Total de clientes na fila: %d", p->tamanho);
+		
 	}else{
 		Beep(1000,500);
 		printf("Nao ha senhas ativas em espera.");
