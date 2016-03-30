@@ -173,3 +173,5 @@ int main(){
 	}while(opc != 0);
 	
 }
+
+//não sobrou espaçõ para fuleragem!
